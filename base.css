@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -41,3 +42,51 @@ body {
      color: red;
     text-align: center;
 }
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: linear-gradient(to bottom, rgba(73, 73, 73, 0.5), rgba(132, 76, 185, 0.5));
+    background-color: black;
+    background-size: 400% 400%; 
+    animation: gradient 3s ease infinite;
+   
+  
+   
+    
+}
+@keyframes gradient {
+   
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+.card{
+    background: linear-gradient(to bottom,  rgba(132, 76, 185, 0.5) , rgba(73, 73, 73, 0.5));
+   
+}
+@media (max-width: 768px) {
+    .card-signin {
+        margin: 1rem auto;
+    }
+    .fs-50 {
+        font-size: 30px;
+    }
+}
+#error-message {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display:none;
+     color: red;
+    text-align: center;
+}
+>>>>>>> 343622461250722acbf4669149fa5bd6bf7e0370
