@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 document.addEventListener('DOMContentLoaded', function () {
     const signInForm = document.getElementById('signInForm');
     const inputEmail = document.getElementById('inputEmail');
@@ -163,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-=======
 document.addEventListener('DOMContentLoaded', function () {
     const signInForm = document.getElementById('signInForm');
     const inputEmail = document.getElementById('inputEmail');
@@ -328,4 +327,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
->>>>>>> 343622461250722acbf4669149fa5bd6bf7e0370

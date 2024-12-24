@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     padding: 0;
     margin: 0;
@@ -68,7 +68,7 @@
     }
   }
   
-=======
+
 * {
     padding: 0;
     margin: 0;
@@ -138,5 +138,27 @@
     }
   }
   
->>>>>>> 343622461250722acbf4669149fa5bd6bf7e0370
+.proj{
+  margin-top: 20px;
+  margin-bottom:20px ;
+  padding: 20px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 300px;
+}
   
