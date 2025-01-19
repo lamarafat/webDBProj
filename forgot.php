@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 session_start();
 
@@ -69,6 +70,8 @@ $conn->close();
 ?>
 
 
+=======
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,6 +93,7 @@ $conn->close();
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <div>
+<<<<<<< HEAD
                         <a href="test.php"> <p class="fw-bold text-white fs-1"> My Job</p></a>
                         </div>
                         <h1 class="card-title text-center text-white">Sign In</h1>
@@ -99,6 +103,25 @@ $conn->close();
                             <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="email" required>
                             <p id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</p>
                                 </div>
+=======
+                            <p class="fw-bold text-white fs-1">NESTLANCE</p>
+                        </div>
+                        <h1 class="card-title text-center text-white">Sign In</h1>
+                      
+                            <div class="row justify-content-center text-center">
+                                <div class="col">
+                                    <a class="text-decoration-none text-white btn" href="https://www.linkedin.com/uas/login?session_redirect=%2Foauth%2Fv2%2Flogin-success%3Fapp_id%3D5559396%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522state%2522%253A%2522meGCSbmnVSKVGlKJyIh6hX63gZhC5oGvYLN60Hm3%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252F24slides.com%252Ftemplates%252Fauth%252Fsocial%252Fcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522appId%2522%253A5559396%252C%2522creationTime%2522%253A1669627129674%257D&fromSignIn=1&trk=oauth&cancel_redirect=%2Foauth%2Fv2%2Flogin-cancel%3Fapp_id%3D5559396%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522state%2522%253A%2522meGCSbmnVSKVGlKJyIh6hX63gZhC5oGvYLN60Hm3%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252F24slides.com%252Ftemplates%252Fauth%252Fsocial%252Fcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522appId%2522%253A5559396%252C%2522creationTime%2522%253A1669627129674%257D" role="button">
+                                        <i class="fa-brands fa-linkedin-in"></i> Sign In via LinkedIn
+                                    </a>
+                                    <a class="text-decoration-none text-white btn" href="https://accounts.google.com/AccountChooser" role="button">
+                                        <i class="fa-brands fa-google "></i>  Sign In via Email
+                                    </a>
+                                    <p class="text-white text-center mt-3">or</p>
+                                </div>
+                            </div>
+                       
+                            <form class="form-signin" id="forgetForm" method="POST">
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
                                 <div class="form-group mb-3">
                                     <input type="password" id="inputpass" class="form-control" placeholder="Password" required>
                                     <p class="form-text text-danger" id="passwordHelp" style="display: none;">Password must be at least 8 characters long and include a number and an uppercase letter.</p>

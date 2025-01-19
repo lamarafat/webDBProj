@@ -17,6 +17,7 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<<<<<<< HEAD
 
     if (empty(trim($_POST["email"]))) {
         $email_err = "Email is required.";
@@ -27,10 +28,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password_err = "Password is required.";
     } else {
         $password = trim($_POST["password"]);
+=======
+    if (empty($_POST["email"])) {
+        $email_err = "Email is required.";
+    } else {
+        $email = $_POST["email"];
+    }
+
+    if (empty($_POST["password"])) {
+        $password_err = "Password is required.";
+    } else {
+        $password = $_POST["password"];
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
     }
     if (empty($email_err) && empty($password_err)) {
         $sql_check_email = "SELECT id, password FROM users WHERE email = ?";
         if ($stmt_check = $conn->prepare($sql_check_email)) {
+<<<<<<< HEAD
     
             $stmt_check->bind_param("s", $email);
             $stmt_check->execute(); 
@@ -42,6 +56,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION["logged_in"] = true;
                     $_SESSION["user_id"] = $id;
                     header("location: test.php"); 
+=======
+            $stmt_check->bind_param("s", $email);
+            $stmt_check->execute();
+            $stmt_check->store_result();
+
+            if ($stmt_check->num_rows > 0) {
+                $stmt_check->bind_result($id, $stored_password);
+                $stmt_check->fetch();
+
+                if (password_verify($password, $stored_password)) {
+                    $_SESSION["logged_in"] = true;
+                    $_SESSION["user_id"] = $id;
+                    header("location: index.php"); 
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
                     exit;
                 } else {
                     $password_err = "Incorrect password.";
@@ -50,7 +78,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $email_err = "No account found with that email.";
             }
 
+<<<<<<< HEAD
             $stmt_check->close(); 
+=======
+            $stmt_check->close();
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
         } else {
             $error_msg = "Error: Could not prepare the query.";
         }
@@ -59,7 +91,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,7 +118,11 @@ $conn->close();
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <div>
+<<<<<<< HEAD
                            <a href="test.php"> <p class="fw-bold text-white fs-1">My Job</p></a>
+=======
+                            <p class="fw-bold text-white fs-1">NESTLANCE</p>
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
                         </div>
                         <h1 class="card-title text-center text-white">Sign In</h1>
                         <?php
@@ -94,6 +133,7 @@ $conn->close();
                             echo "<div class='alert alert-danger'>$error_msg</div>";
                         }
                         ?>
+<<<<<<< HEAD
                          <div class="row justify-content-center text-center">
                                 <div class="col">
                                     <a class="text-decoration-none text-white btn" href="https://www.linkedin.com/uas/login?session_redirect=%2Foauth%2Fv2%2Flogin-success%3Fapp_id%3D5559396%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522state%2522%253A%2522meGCSbmnVSKVGlKJyIh6hX63gZhC5oGvYLN60Hm3%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252F24slides.com%252Ftemplates%252Fauth%252Fsocial%252Fcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522appId%2522%253A5559396%252C%2522creationTime%2522%253A1669627129674%257D&fromSignIn=1&trk=oauth&cancel_redirect=%2Foauth%2Fv2%2Flogin-cancel%3Fapp_id%3D5559396%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522state%2522%253A%2522meGCSbmnVSKVGlKJyIh6hX63gZhC5oGvYLN60Hm3%2522%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252F24slides.com%252Ftemplates%252Fauth%252Fsocial%252Fcallback%2522%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522currentSubStage%2522%253A0%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522appId%2522%253A5559396%252C%2522creationTime%2522%253A1669627129674%257D" role="button">
@@ -105,6 +145,8 @@ $conn->close();
                                     <p class="text-white text-center mt-3">or</p>
                                 </div>
                             </div>
+=======
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
 
                         <form class="form-signin" id="signInForm" method="POST" action="">
                             <div class="form-group mb-3">

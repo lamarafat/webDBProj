@@ -61,6 +61,7 @@ $conn->close();
     <link rel="stylesheet" href="./base.css">
 </head>
 <body>
+<<<<<<< HEAD
 
 <header>
         <div class="navbar">
@@ -91,6 +92,11 @@ $conn->close();
 <div class="container">
     <div class="row d-flex justify-content-center align-items-center flex-wrap mt-5">
         <div class="col-md-6 col-xs-12 radius shadow text-center text-white p-5">
+=======
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center flex-wrap mt-5">
+        <div class="col-md-6 col-xs-12 radius shadow text-center p-5">
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
             <h1>Project Details</h1>
             <h2 id="projName"></h2>
             <p id="projDesc"></p>

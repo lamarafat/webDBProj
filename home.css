@@ -82,6 +82,10 @@
   }
 
   .card-img-top{
+<<<<<<< HEAD
+=======
+    width: 100px;
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,3 +164,7 @@
   text-align: center;
   height: 300px;
 }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d0920f0714346dce224fec72d78c39a6fde8db59
